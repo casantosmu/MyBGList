@@ -17,4 +17,6 @@ public class Mechanic
     [Column("last_modified_date")]
     [Required]
     public DateTime LastModifiedDate { get; set; }
+
+    public ICollection<BoardGamesMechanics>? BoardGamesMechanics { get; set; }
 }

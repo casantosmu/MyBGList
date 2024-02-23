@@ -45,4 +45,8 @@ public class BoardGame
     [Column("last_modified_date")]
     [Required]
     public DateTime LastModifiedDate { get; set; }
+
+    public ICollection<BoardGamesDomains>? BoardGamesDomains { get; set; }
+
+    public ICollection<BoardGamesMechanics>? BoardGamesMechanics { get; set; }
 }
